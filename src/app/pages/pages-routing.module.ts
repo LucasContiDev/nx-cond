@@ -29,6 +29,9 @@ const routes: Routes = [{
     path: 'forms',
     loadChildren: './forms/forms.module#FormsModule',
   }, {
+    path: 'enquetes',
+    loadChildren: './enquetes/enquetes.module#EnquetesModule',
+  }, {
     path: 'reclamacoes',
     loadChildren: './reclamacoes/reclamacoes.module#ReclamacoesModule',
   },

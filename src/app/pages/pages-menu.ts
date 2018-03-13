@@ -68,20 +68,16 @@ export const MENU_ITEMS: NbMenuItem[] = [
     ],
   },
   {
-    title: 'Enquetes ',
-    icon: 'fa fa-server',
+    title: 'Enquetes',
+    icon: 'nb-compose',
     children: [
       {
-        title: 'Echarts',
-        link: '/pages/charts/echarts',
+        title: 'Cadastrar',
+        link: '/pages/enquetes/cadastros',
       },
       {
-        title: 'Charts.js',
-        link: '/pages/charts/chartjs',
-      },
-      {
-        title: 'D3',
-        link: '/pages/charts/d3',
+        title: 'Visualizar',
+        link: '/pages/enquetes/visualizar',
       },
     ],
   },

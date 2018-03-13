@@ -8,9 +8,6 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   templateUrl: './enquetes-visualizar.component.html',
 })
 export class EnquetesVisualizarComponent {
-
-
-
   starRate = 2;
   heartRate = 4;
 }
