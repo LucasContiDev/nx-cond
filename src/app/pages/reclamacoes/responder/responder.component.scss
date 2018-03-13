@@ -1,0 +1,47 @@
+@import '../../../@theme/styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+
+@include nb-install-component() {
+
+  nb-card-footer {
+    padding-bottom: 0.25rem;
+
+    button {
+      margin: 0 1rem 1rem 0;
+    }
+  }
+
+  /* stylelint-disable */
+  toaster-container /deep/ {
+     #toast-container .toast-close-button {
+      right: 0;
+    }
+  }
+  /* stylelint-enable */
+
+  @include media-breakpoint-down(xs) {
+    .dropdown-toggle {
+      font-size: 0.75rem;
+    }
+  }
+
+
+.full-width {
+  flex: 1;
+  min-width: 220px;
+}
+
+nb-checkbox {
+  margin-bottom: 1rem;
+}
+
+.form-inline > * {
+  margin: 0 1.5rem 1.5rem 0;
+}
+
+nb-card.inline-form-card nb-card-body {
+  padding-bottom: 0;
+}
+
+}

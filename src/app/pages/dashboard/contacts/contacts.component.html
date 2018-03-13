@@ -1,0 +1,12 @@
+<nb-card [size]="breakpoint.width >= breakpoints.xxxl || breakpoint.width < breakpoints.md ? 'large' : 'xlarge'">
+  <nb-card-header>Reclamações</nb-card-header>
+    <nb-card-body class='card-body-padd'>
+      <div class="contact" *ngFor="let c of contacts">
+        <nb-user [picture]="c.user.picture" [name]="c.user.name" [title]="c.user.reclama" size="large" ></nb-user>
+        <a class="i-contact nb-phone" (click)="goToReclamacoes(c.user)"></a>
+      </div>
+      <div class="vermais">
+        <a class="link" (click)="goToListagem()" >Ver mais</a>
+      </div>
+    </nb-card-body>
+</nb-card>

@@ -1,0 +1,23 @@
+Para executar o angular serve apenas localhost (Porta default 4200)
+$ ng serve
+
+Para executar o angular serve na LAN (Porta default 4200)
+$ ng serve --host 0.0.0.0
+
+Para executar o angular serve com a porta desejada
+$ ng serve --host X.X.X.X --port XXXX
+
+Para buildar o APK
+cordova build android
+
+Para buildar o APK em modo PRODUÇÃO (publicar na play store, necessário efetuar configuração de SIGN)
+cordova build --release --prod android
+
+Para executar o cordova no navegador
+cordova run browser
+
+Para buildar o ANGULAR no cordova
+ng build --target=production --environment=prod --output-path cordova/www
+
+Inserir no arquivo /cordova/scripts/prepareAngular2App.js - Para atualizar o angular no build do cordova
+<hook src="scripts/prepareAngular2App.js" type="before_prepare" />

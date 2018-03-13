@@ -1,0 +1,28 @@
+
+<div [hidden]="confirmado" class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>Cadastrar novo aviso A</nb-card-header>
+      <nb-card-body>
+          <toaster-container [toasterconfig]="config"></toaster-container>
+        <form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Título" name="titulo" ngModel>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Data" name="data" ngModel >
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Digite aqui o aviso" name="texto" ngModel></textarea>
+          </div>
+          <button (click)="makeToast()" type="submit" class="btn btn-hero-success">Enviar</button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<div [hidden]="!confirmado" >
+  <toaster-container [toasterconfig]="config"></toaster-container> 
+</div>
+ 

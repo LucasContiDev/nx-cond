@@ -1,0 +1,12 @@
+<nb-card>
+  <nb-card-header>Avisos</nb-card-header>
+    <nb-card-body class='card-body-padd'>
+      <div class="contact" *ngFor="let a of contacts">
+        <nb-user [name]="a.aviso.titulo" [title]="a.aviso.data" size="large" (click)="goToReclamacoes(a.user)"></nb-user>
+          <a class="i-contact nb-phone" (click)="goToReclamacoes(a.user)"></a>
+        </div>
+        <div class="vermais">
+          <a class="link" (click)="goToListagem()" >Ver mais</a>
+      </div>
+    </nb-card-body>
+</nb-card>
