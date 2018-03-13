@@ -21,3 +21,38 @@ ng build --target=production --environment=prod --output-path cordova/www
 
 Inserir no arquivo /cordova/scripts/prepareAngular2App.js - Para atualizar o angular no build do cordova
 <hook src="scripts/prepareAngular2App.js" type="before_prepare" />
+
+
+===================
+Integrando o Angular com o Cordova:
+Link original: https://www.becompany.ch/en/blog/2016/10/19/creating-apache-cordova-app-with-angular2
+
+Após baixar o projeto do Angular, acesse a pasta e rode o comando:
+-> npm i
+
+Após baixar todas as dependencias, instale o cordova:
+-> npm install -g cordova
+
+Após instalar o cordova globalmente, certifique-se de que está dentro da pasta do projeto do 
+angular, pois será necess[ario criar um projeto do cordova dentro dessa pasta:
+-> cordova create nx-cond
+
+Após criar o projeto, acesse a pasta que foi criada com o nome nx-cond (atenção, 
+essa é a pasta do projeto cordova, que deve estar dentro da pasta do projeto Angular).
+Dentro da pasta do cordova, apague a pasta www.
+-> rm -r www
+
+Após apagar a pasta, volte na pasta raíz do projeto angular:
+-> cd ..
+
+Execute o comando abaixo para criar uma nova pasta www com os arquivos do angular:
+->  ng build --target=production --environment=prod --output-path cordova/www/
+
+Agora adicione as plataformas que serão utilizadas:
+-> cordova plataform add (android, ios ou browser)
+
+Agora basta executar o projeto seguindo os comandos do cordova. Para executar, deve-se estar 
+dentro da pasta do cordova sempre.
+-> cordova run browser (ou android, ou ios);
+-> cordova build android (ou ios)
+===================
