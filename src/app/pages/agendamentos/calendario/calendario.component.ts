@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ScheduleModule } from 'primeng/schedule';
 
 @Component({
   selector: 'ngx-calendario',
