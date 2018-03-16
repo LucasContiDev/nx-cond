@@ -35,12 +35,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'fa fa-calendar-check-o',
     children: [
       {
-        title: 'Form Inputs',
-        link: '/pages/forms/inputs',
-      },
-      {
-        title: 'Form Layouts',
-        link: '/pages/forms/layouts',
+        title: 'Calendario',
+        link: '/pages/agendamentos/calendario',
       },
     ],
   },

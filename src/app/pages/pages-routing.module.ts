@@ -32,6 +32,10 @@ const routes: Routes = [{
     path: 'enquetes',
     loadChildren: './enquetes/enquetes.module#EnquetesModule',
   }, {
+    path: 'agendamentos',
+    loadChildren: './agendamentos/agendamentos.module#AgendamentosModule',
+  },
+    {
     path: 'reclamacoes',
     loadChildren: './reclamacoes/reclamacoes.module#ReclamacoesModule',
   },
