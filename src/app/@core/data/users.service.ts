@@ -18,7 +18,6 @@ export class UserService {
     alan: { name: 'Marcos de Cássio', picture: 'assets/images/alan.png', reclama: 'Quadra poliesportiva sem rede'  },
     kate: { name: 'Catarina Machado', picture: 'assets/images/kate.png', reclama: 'Churrasqueira sem grelha!!'  },
   };
-  
   private userArray: any[];
 
   constructor() {
@@ -38,9 +37,11 @@ export class UserService {
     return Observable.of(this.userArray[counter]);
   }
   setUser(c){
+    
     this.user = c;
   }
   getUserName(){
+
     return this.user.name;
   }
   getUserReclama(){
