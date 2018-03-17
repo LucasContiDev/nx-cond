@@ -35,8 +35,8 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'fa fa-calendar-check-o',
     children: [
       {
-        title: 'Calendario',
-        link: '/pages/agendamentos/calendario',
+        title: 'Agendar',
+        link: '/pages/agendamentos/agendamentos-selecao',
       },
     ],
   },

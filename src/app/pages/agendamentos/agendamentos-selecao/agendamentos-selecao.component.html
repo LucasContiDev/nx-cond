@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-6" *ngFor="let l of lazer_tipos">
+      <nb-card>
+        <nb-card-body>
+            <nb-user [name]="l.lazer.desc" (click)="goToCalendario(l.lazer)" ></nb-user> 
+        </nb-card-body>
+      </nb-card>
+    </div>
+</div>
+  
