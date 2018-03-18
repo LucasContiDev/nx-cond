@@ -2,8 +2,8 @@
     <div class="col-lg-10">
       <nb-card>
         <nb-card-header>Calendário</nb-card-header>
-        <nb-card-body>>
-          <p-schedule [events]="events"></p-schedule>
+        <nb-card-body>
+          <p-schedule [events]="events" locale="pt-br" [header]="headerConfig" (onViewRender)="loadEvents($event)"></p-schedule>
         </nb-card-body>
       </nb-card>
     </div>

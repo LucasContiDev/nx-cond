@@ -52,7 +52,7 @@ Agora adicione as plataformas que serão utilizadas:
 -> cordova plataform add (android, ios ou browser)
 
 Agora basta executar o projeto seguindo os comandos do cordova. Para executar, deve-se estar 
-dentro da pasta do cordova sempre.
+sempre dentro da pasta do cordova.
 -> cordova run browser (ou android, ou ios);
 -> cordova build android (ou ios)
 ===================

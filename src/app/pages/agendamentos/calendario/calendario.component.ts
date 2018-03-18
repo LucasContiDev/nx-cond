@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EventService } from './calendarioEventService';
 
 @Component({
   selector: 'ngx-calendario',
@@ -6,33 +7,24 @@ import { Component } from '@angular/core';
   templateUrl: './calendario.component.html',
 })
 export class CalendarioComponent {
-  events: any[];
+    eventService: any;
+    events: any[];
+    headerConfig: any;
 
     // tslint:disable-next-line:use-life-cycle-interface
     ngOnInit() {
-        this.events = [
-            {
-                'title': 'All Day Event',
-                'start': '2016-01-01',
-            },
-            {
-                'title': 'Long Event',
-                'start': '2016-01-07',
-                'end': '2016-01-10',
-            },
-            {
-                'title': 'Repeating Event',
-                'start': '2016-01-09T16:00:00',
-            },
-            {
-                'title': 'Repeating Event',
-                'start': '2016-01-16T16:00:00',
-            },
-            {
-                'title': 'Conference',
-                'start': '2016-01-11',
-                'end': '2016-01-13',
-            },
-        ];
+        this.eventService.getEvents().then(events => {this.events = events; });
+
+        this.headerConfig = {
+            left: 'prev,next hoje',
+            center: 'Hoje',
+            right: 'month,agendaWeek,agendaDay',
+        };
+    }
+
+    loadEvents(event) {
+        const start = event.view.start
+        const end = event.view.end
+        this.events = this.eventService.getEvents().then(events => {this.events = events; });
     }
 }
