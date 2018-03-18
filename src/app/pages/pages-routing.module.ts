@@ -40,6 +40,10 @@ const routes: Routes = [{
     loadChildren: './reclamacoes/reclamacoes.module#ReclamacoesModule',
   },
   {
+    path: 'regimento',
+    loadChildren: './regimento/regimento.module#RegimentoModule',
+  },
+  {
     path: 'avisos',
     loadChildren: './avisos/avisos.module#AvisosModule',
   },

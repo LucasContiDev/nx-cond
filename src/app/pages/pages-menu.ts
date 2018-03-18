@@ -101,6 +101,21 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  {
+    title: 'Regimento Interno',
+    icon: 'fa fa-file',
+    children: [
+      {
+        title: 'Cadastrar',
+        link: '/pages/regimento/regimento-cadastrar',
+      },
+      {
+        title: 'Visualizar',
+        link: 'ad',
+      },
+    ],
+    
+  },
   /*{
     title: 'Auth',
     icon: 'nb-locked',
