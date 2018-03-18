@@ -1,9 +1,9 @@
 <div class="row">
     <div class="col-lg-10">
       <nb-card>
-        <nb-card-header>Calendário</nb-card-header>
+        <nb-card-header>Selecione a data desejada</nb-card-header>
         <nb-card-body>
-          <p-schedule [events]="events" locale="pt-br" [header]="headerConfig" (onViewRender)="loadEvents($event)"></p-schedule>
+          <p-schedule locale="pt-br" [events]="events" [header]="headerConfig" (onViewRender)="loadEvents($event)"></p-schedule>
         </nb-card-body>
       </nb-card>
     </div>

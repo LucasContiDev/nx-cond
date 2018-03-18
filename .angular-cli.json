@@ -46,6 +46,7 @@
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/moment/min/moment.min.js",
         "../node_modules/fullcalendar/dist/fullcalendar.min.js",
+        "../node_modules/fullcalendar/dist/locale/pt-br.js",
         "../node_modules/chart.js/dist/Chart.min.js"
       ],
       "environmentSource": "environments/environment.ts",
