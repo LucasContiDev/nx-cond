@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { EventService } from './calendarioEventService';
 
@@ -13,13 +14,24 @@ export class CalendarioComponent {
 
     // tslint:disable-next-line:use-life-cycle-interface
     ngOnInit() {
-        this.eventService.getEvents().then(events => {this.events = events; });
-
         this.headerConfig = {
-            left: 'prev,next hoje',
-            center: 'Hoje',
+            theme: true,
+            left: 'prev,next today',
+            center: 'title',
             right: 'month,agendaWeek,agendaDay',
-        };
+            Location: 'pt-br',
+            close: 'fa-times',
+            prevMonth: 'fa-angle-double-left',
+            nextMonth: 'fa-angle-double-right',
+            prev: 'circle-triangle-w',
+            next: 'circle-triangle-e',
+            prevYear: 'seek-prev',
+            nextYear: 'seek-next',
+            }
+        }
+
+    back(fc) {
+        fc.prev();
     }
 
     loadEvents(event) {
