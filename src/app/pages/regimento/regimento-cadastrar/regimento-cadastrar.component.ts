@@ -20,7 +20,7 @@ export class RegimentoCadastrarComponent {
 
   position = 'toast-center';
   animationType = 'fade';
-  title = 'Aviso cadastrado com sucesso!';
+  title = 'Regimento Interno cadastrado com sucesso!';
   content = '';
   timeout = 5000;
   toastsLimit = 5;
