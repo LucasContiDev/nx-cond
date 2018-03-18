@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { AvisosService } from '../../../@core/data/avisos.service';
 import { ToasterService, ToasterConfig, Toast, BodyOutputType } from 'angular2-toaster';
 import 'style-loader!angular2-toaster/toaster.css';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ngx-cadastrar',
@@ -12,7 +13,8 @@ export class RegimentoCadastrarComponent {
   confirmado = false;
 
   constructor(private avisosService: AvisosService,
-    private toasterService: ToasterService)     {
+    private toasterService: ToasterService,
+    private router: Router, private r:ActivatedRoute)     {
     }
 
     
@@ -56,6 +58,9 @@ export class RegimentoCadastrarComponent {
     this.toasterService.popAsync(toast);
   }
 
+  goToDash() {
+    this.router.navigate(["./dashboard"], { relativeTo: this.r });
+  }
   
   onSubmit(form: any): void {
     console.log('Valor do Form:', form)
