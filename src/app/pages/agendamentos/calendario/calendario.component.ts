@@ -1,6 +1,7 @@
 import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { EventService } from './calendarioEventService';
+import { color } from 'd3-color';
 
 @Component({
   selector: 'ngx-calendario',
@@ -11,22 +12,19 @@ export class CalendarioComponent {
     eventService: any;
     events: any[];
     headerConfig: any;
+    selectable: true;
 
     // tslint:disable-next-line:use-life-cycle-interface
     ngOnInit() {
         this.headerConfig = {
-            theme: true,
+            themeSystem: 'bootstrap4',
+            theme: false,
             left: 'prev,next today',
             center: 'title',
             right: 'month,agendaWeek,agendaDay',
+            prev: 'fa-chevron-left',
+            next: 'fa-chevron-right',
             Location: 'pt-br',
-            close: 'fa-times',
-            prevMonth: 'fa-angle-double-left',
-            nextMonth: 'fa-angle-double-right',
-            prev: 'circle-triangle-w',
-            next: 'circle-triangle-e',
-            prevYear: 'seek-prev',
-            nextYear: 'seek-next',
             }
         }
 

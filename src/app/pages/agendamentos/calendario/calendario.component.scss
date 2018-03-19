@@ -1,9 +1,11 @@
 @import '../../../@theme/styles/themes';
 @import '~bootstrap/scss/mixins/breakpoints';
 @import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 button {
   margin: 0 0.75rem 2rem 0;
+  
 }
 
 @include nb-install-component() {
@@ -12,14 +14,17 @@ button {
   }
 
   nb-card-body {
-    overflow: visible;
-    color: whitesmoke;
-    text-decoration-line: steelblue;
     
   }
 
+  p-schedule{
+    overflow: visible;
+    color: whitesmoke;
+  }
+
   .button {
-    color: aqua;
+    color: white;
+    content: icon;
   }
 
   .input-group {

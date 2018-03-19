@@ -11,15 +11,15 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class AgendamentosSelecaoComponent implements OnInit {
   lazer_tipos: any[];
   themeSubscription: any;
-  aviso:any;
+  aviso: any;
 
   constructor(private lazerService: LazerService,
-              private router: Router, private r:ActivatedRoute) {
+              private router: Router, private r: ActivatedRoute) {
   }
 
   ///
   goToCalendario(a) {
-    this.router.navigate(["../calendario"], { relativeTo: this.r });
+    this.router.navigate(['../calendario'], { relativeTo: this.r });
     this.lazerService.setLazer(a);
   }
 
@@ -30,7 +30,7 @@ export class AgendamentosSelecaoComponent implements OnInit {
         this.lazer_tipos = [
           {lazer: tipo_lazer.churrasqueira},
           {lazer: tipo_lazer.salao_1},
-          {lazer: tipo_lazer.salao_2}
+          {lazer: tipo_lazer.salao_2},
         ];
       });
   }
