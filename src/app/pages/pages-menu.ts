@@ -113,8 +113,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
         title: 'Visualizar',
         link: '/pages/regimento/regimento-visualizar',
       },
-    ],
-    
+    ], 
   },
   /*{
     title: 'Auth',
@@ -138,4 +137,41 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },*/
+];
+export const USUARIO: NbMenuItem[] = [
+  {
+    title: 'Home',
+    icon: 'fa fa-home',
+    link: '/pages/dashboard',
+    home: true,
+  },
+  {
+    title: 'FERRAMENTAS',
+    group: true,
+  },
+  {
+    title: 'Reclamações',
+    icon: 'fa fa-warning',
+    link: '/pages/reclamacoes/listagem',
+  },
+  {
+    title: 'Agendamentos',
+    icon: 'fa fa-calendar-check-o',
+    children: [
+      {
+        title: 'Agendar',
+        link: '/pages/agendamentos/agendamentos-selecao',
+      },
+    ],
+  },
+  {
+    title: 'Regimento Interno',
+    icon: 'fa fa-file',
+    children: [
+      {
+        title: 'Visualizar',
+        link: '/pages/regimento/regimento-visualizar',
+      },
+    ], 
+  },
 ];
