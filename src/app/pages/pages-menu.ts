@@ -111,7 +111,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
       {
         title: 'Visualizar',
-        link: 'ad',
+        link: '/pages/regimento/regimento-visualizar',
       },
     ],
     

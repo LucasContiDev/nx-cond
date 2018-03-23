@@ -1,0 +1,53 @@
+
+<div [hidden]="confirmado" class="row">
+  <div class="col-md-12">
+    <nb-card size="large">
+      <nb-card-header>
+        Regimento Interno
+      </nb-card-header>
+      <nb-card-body>
+        <h4>REGIMENTO INTERNO DO CONDOMÍNIO NEXT</h4>
+        <p class="text-indent">
+            Art. 1º - O presente Regulamento Interno, do Condomínio do Edifício ________________, 
+            aprovado em Assembléia Geral do dia ____________dispõe sobre a estrutura 
+            e normas do Condomínio, elaboradas para a preservação e manutenção da ordem, 
+            comodidade, tranqüilidade, conservação e segurança do Condomínio.
+        </p>
+        <p class="text-indent">
+            Parágrafo único - Todos os moradores do Condomínio: proprietários, 
+            locatários e serviçais estão obrigados ao rigoroso cumprimento
+            das disposições da Lei e deste Regulamento, sendo as infrações 
+            punidas de acordo com as legislação vigente e as cláusulas aqui contidas. 
+        </p>
+        <p class="text-indent">
+            Art. 2º - As unidades no todo ou em parte, destinam-se exclusivamente a fins residenciais, 
+            sendo expressamente proibido o uso, locação ou cessão para atividades profissionais, 
+            comerciais ou industriais de qualquer natureza, para depósito de qualquer objeto, 
+            para "república de estudantes",  assim como para qualquer fim escuso ou ilícito.  
+        </p>
+        <p class="text-indent">
+            Art. 2º - As unidades no todo ou em parte, destinam-se exclusivamente a fins residenciais, 
+            sendo expressamente proibido o uso, locação ou cessão para atividades profissionais, 
+            comerciais ou industriais de qualquer natureza, para depósito de qualquer objeto, 
+            para "república de estudantes",  assim como para qualquer fim escuso ou ilícito.  
+        </p>
+        <strong> CAPÍTULO II - DOS DEVERES </strong>
+        <p class="text-indent">
+            Art. 3º - Zelar e fazer zelar pela integridade material da edificação, 
+            bem como contribuir para o custeio de qualquer obra de manutenção ou melhoramento de interesse 
+            geral do condomínio, cuja execução seja aprovada em Assembléia.   
+        </p>
+        <p class="text-indent">
+            Art. 4º - Reparar, por iniciativa própria e às suas custas, os danos causados por si, 
+            seus familiares, serviçais, visitantes ou ocupantes, bem como por ocasião de mudanças 
+            do prédio ou dependências comuns do Condomínio.   
+        </p>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
+
+<div [hidden]="!confirmado" >
+  <toaster-container [toasterconfig]="config" (click)="goToDash()"></toaster-container> 
+</div>
+ 

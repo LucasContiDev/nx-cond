@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { RegimentoComponent } from './regimento.component';
 import { RegimentoCadastrarComponent } from './regimento-cadastrar/regimento-cadastrar.component';
+import { RegimentoVisualizarComponent } from './regimento-visualizar/regimento-visualizar.component';
 
 const routes: Routes = [{
   path: '',
@@ -10,7 +11,12 @@ const routes: Routes = [{
   children: [{
     path: 'regimento-cadastrar',
     component: RegimentoCadastrarComponent,
+  },
+  {
+    path: 'regimento-visualizar',
+    component: RegimentoVisualizarComponent,
   }],
+ 
 }];
 
 @NgModule({
@@ -28,4 +34,5 @@ export class RegimentoRoutingModule {
 export const routedComponents = [
   RegimentoComponent,
   RegimentoCadastrarComponent,
+  RegimentoVisualizarComponent,
 ];
