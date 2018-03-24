@@ -32,7 +32,9 @@
         "../node_modules/nebular-icons/scss/nebular-icons.scss",
         "../node_modules/fullcalendar/dist/fullcalendar.min.css",
         "../node_modules/pace-js/templates/pace-theme-flash.tmpl.css",
-        "./app/@theme/styles/styles.scss"
+        "./app/@theme/styles/styles.scss",
+        "../node_modules/primeng/resources/themes/bootstrap/theme.css",
+        "./app/@theme/styles/style_calendar.css"
       ],
       "scripts": [
         "../node_modules/pace-js/pace.min.js",

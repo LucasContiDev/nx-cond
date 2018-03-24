@@ -1,0 +1,20 @@
+.fc-basic-view .fc-day-top .fc-week-number {
+    min-width: 1.5em;
+    text-align: center;
+    background-color: #000000;
+    color: #808080; }
+
+.fc-day-number {
+    color: #000000;
+}
+
+body .ui-button {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+body .ui-button:enabled:hover {
+    outline: 0 none;
+    background-color: #bdbcbc;
+}
