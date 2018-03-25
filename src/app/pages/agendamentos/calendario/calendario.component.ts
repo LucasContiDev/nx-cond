@@ -2,6 +2,7 @@ import { Location } from '@angular/common';
 import { Component } from '@angular/core';
 import { EventService } from './calendarioEventService';
 import { color } from 'd3-color';
+import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-calendario',
@@ -13,6 +14,19 @@ export class CalendarioComponent {
     events: any[];
     headerConfig: any;
     selectable: true;
+    breakpoint: NbMediaBreakpoint;
+    breakpoints: any;
+    themeSubscription: any;
+
+    constructor (
+    private themeService: NbThemeService,
+    private breakpointService: NbMediaBreakpointsService){ 
+        this.breakpoints = this.breakpointService.getBreakpointsMap();
+        this.themeSubscription = this.themeService.onMediaQueryChange()
+          .subscribe(([oldValue, newValue]) => {
+            this.breakpoint = newValue;
+          });
+      }
 
     // tslint:disable-next-line:use-life-cycle-interface
     ngOnInit() {

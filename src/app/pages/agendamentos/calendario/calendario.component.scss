@@ -19,7 +19,7 @@ button {
 
   p-schedule{
     overflow: visible;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
   }
 
   .button {
@@ -71,11 +71,11 @@ button {
 
   .star {
     font-size: 1.5rem;
-    color: nb-theme(color-fg);
+    color: #ffffff;
   }
 
   .filled {
-    color: nb-theme(color-fg);
+    color: #ffffff;
   }
 
   // TODO: Replace with the card header styles mixin

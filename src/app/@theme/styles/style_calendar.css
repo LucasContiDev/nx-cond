@@ -18,3 +18,23 @@ body .ui-button:enabled:hover {
     outline: 0 none;
     background-color: #bdbcbc;
 }
+
+body .ui-state-active {
+    background-color: #797979;
+}
+body .ui-button:enabled:active {
+    background-color: #797979;
+    -moz-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+body .ui-button:focus {
+    background-color: #797979;
+}
+
+body .ui-state-active, body .ui-state-highlight {
+    background-color: #777777;
+    color: #ffffff;
+}
+
