@@ -3,7 +3,13 @@
       <nb-card>
         <nb-card-header>Selecione a data desejada</nb-card-header>
         <nb-card-body>
-          <p-schedule height="auto" locale="pt-br" [header]="headerConfig" (onViewRender)="loadEvents($event)"></p-schedule>
+          <p-schedule 
+            height="auto" 
+            locale="pt-br" 
+            [header]="headerConfig" 
+            (onViewRender)="loadEvents($event)"
+            (onDayClick)="goToAgendamentoCadastrar()">
+        </p-schedule>
         </nb-card-body>
       </nb-card>
     </div>

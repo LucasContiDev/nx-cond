@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AgendamentosComponent } from './agendamentos.component';
 import { CalendarioComponent } from './calendario/calendario.component';
 import { AgendamentosSelecaoComponent } from './agendamentos-selecao/agendamentos-selecao.component';
+import { AgendamentosCadastrarComponent } from './agendamentos-cadastrar/agendamentos-cadastrar.component';
 
 
 const routes: Routes = [{
@@ -16,6 +17,10 @@ const routes: Routes = [{
   {
     path: 'agendamentos-selecao',
     component: AgendamentosSelecaoComponent,
+  },
+  {
+    path: 'agendamentos-cadastrar',
+    component: AgendamentosCadastrarComponent,
   }],
 }];
 
@@ -35,4 +40,5 @@ export const routedComponents = [
   AgendamentosComponent,
   CalendarioComponent,
   AgendamentosSelecaoComponent,
+  AgendamentosCadastrarComponent,
 ];

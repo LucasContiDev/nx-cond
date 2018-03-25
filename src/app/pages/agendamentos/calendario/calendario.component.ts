@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { EventService } from './calendarioEventService';
 import { color } from 'd3-color';
 import { NbThemeService, NbMediaBreakpoint, NbMediaBreakpointsService } from '@nebular/theme';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'ngx-calendario',
@@ -20,7 +21,9 @@ export class CalendarioComponent {
 
     constructor (
     private themeService: NbThemeService,
-    private breakpointService: NbMediaBreakpointsService){ 
+    private breakpointService: NbMediaBreakpointsService,
+    private router: Router, private r:ActivatedRoute){ 
+
         this.breakpoints = this.breakpointService.getBreakpointsMap();
         this.themeSubscription = this.themeService.onMediaQueryChange()
           .subscribe(([oldValue, newValue]) => {
@@ -41,6 +44,9 @@ export class CalendarioComponent {
             Location: 'pt-br',
             }
         }
+    goToAgendamentoCadastrar() {
+        this.router.navigate(["../agendamentos-cadastrar"], { relativeTo: this.r });
+    }
 
     back(fc) {
         fc.prev();
