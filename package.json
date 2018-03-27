@@ -31,7 +31,7 @@
     "docs:serve": "compodoc -p src/tsconfig.app.json -d docs -s",
     "prepush": "npm run lint:ci",
     "release:changelog": "npm run conventional-changelog -- -p angular -i CHANGELOG.md -s",
-    "postinstall": "ng build --aot -prod"
+    "postinstall": "ng build — env=prod"
   },
   "dependencies": {
     "typescript": "~2.3.3",
